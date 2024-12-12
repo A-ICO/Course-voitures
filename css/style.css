@@ -1,0 +1,88 @@
+/* /* @charset "UTF-8";
+
+/*
+* Nom du projet : Course de voitures
+* Auteur : Angelo
+* Date : 27/11/2024
+*Description : Feuille de style pour Course de voitures
+*/
+
+body {
+    background-image: url("../img/cicruitlong.png");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#track {
+    position: relative;
+    width: 100%; 
+    height: 400px;
+    margin: 40px auto;
+    /* border: 2px solid #fff; */
+}
+
+.car {
+    position: absolute;
+    width: 220px;
+}
+
+#car1 {
+    bottom: 250px;
+}
+
+#car2 {
+    bottom: 40px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+#winner {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+}
+button{color: black;background-color:rgb(0, 0, 0); font-family: jaro;text-shadow: yellow 1px 1px, yellow -1px -1px, yellow 1px -1px, yellow -1px 1px;border :2px solid yellow}
+
+h1{font-family: jaro;color: red; text-shadow: #000000 2px 2px, #000000 -2px -2px, #000000 2px -2px, #000000 -2px 2px;font-size: 80px;}
+
+#countdown{color: rgb(255, 14, 14);font-family: jaro;text-shadow: yellow 1px 1px, yellow -1px -1px, yellow 1px -1px, yellow -1px 1px;font-size: larger;font:bold;}
+#winner{color: rgb(0, 0, 0);font-family: jaro;text-shadow: white 2px 2px, white -2px -2px, white 2px -2px, white -2px 2px;}
+
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 2; /* Assure que le texte est au-dessus des autres éléments */
+    display: none; /* Cache par défaut */
+}
+
+#winner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px; /* Augmente la taille du texte */
+    font-weight: bold;
+    color: yellow;
+    z-index: 5; /* Assure que le texte est au-dessus des autres éléments */
+    text-shadow: 2px 2px 5px black; /* Donne un effet d'ombre pour meilleure lisibilité */
+}
